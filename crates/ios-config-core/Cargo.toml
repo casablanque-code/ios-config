@@ -1,0 +1,11 @@
+[package]
+name = "ios-config-core"
+version = "0.1.0"
+edition = "2021"
+description = "IR types for Cisco IOS configuration (used by ios-config)"
+license = "MIT"
+repository = "https://github.com/casablanque-code/ios-config"
+
+[dependencies]
+ipnet = { version = "2", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }

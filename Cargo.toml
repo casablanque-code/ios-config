@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/ios-config-core",
+    "crates/ios-config",
+]
+resolver = "2"

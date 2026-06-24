@@ -1,0 +1,14 @@
+[package]
+name = "ios-config"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-dependency Cisco IOS configuration parser. Parses show running-config output into a typed IR."
+license = "MIT"
+repository = "https://github.com/casablanque-code/ios-config"
+keywords = ["cisco", "ios", "network", "parser", "config"]
+categories = ["parser-implementations", "network-programming"]
+
+[dependencies]
+ios-config-core = { version = "0.1.0", path = "../ios-config-core" }
+ipnet = { version = "2", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
