@@ -3,6 +3,10 @@
 A Rust library for parsing Cisco IOS `show running-config` output into a typed,
 structured representation.
 
+[![crates.io](https://img.shields.io/crates/v/ios-config.svg)](https://crates.io/crates/ios-config)
+[![docs.rs](https://docs.rs/ios-config/badge.svg)](https://docs.rs/ios-config)
+
+
 ```toml
 [dependencies]
 ios-config = "0.1"
