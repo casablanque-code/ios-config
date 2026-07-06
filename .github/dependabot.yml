@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # Cargo workspace root - covers crates/ios-config and crates/ios-config-core
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      cargo-dependencies:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore(deps)"
+    # crates.io publishing: keep an eye on semver-major bumps landing separately
+    versioning-strategy: "increase"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
